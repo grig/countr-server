@@ -2,11 +2,11 @@ var express = require('express');
 var app = express();
 
 var count = 0;
-app.get('/likes', function(req, res) {
+app.get('/counter', function(req, res) {
   res.json({count: count});
 });
 
-app.post('/likes', function(req, res) {
+app.post('/counter', function(req, res) {
   count += 1;
   res.json({count: count});
 });
