@@ -11,7 +11,9 @@ app.post('/counter', function(req, res) {
   res.json({count: count});
 });
 
-var server = app.listen(3000, function() {
+app.set("port", process.env.PORT || 3000);
+
+var server = app.listen(app.settings.port, function() {
   var host = server.address().address;
   var port = server.address().port;
   console.log('Countr server listening at http://%s:%s', host, port);
