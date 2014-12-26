@@ -51,6 +51,8 @@ git-репозиторий с исходниками же.
 
   http://github.com/grig/countr-server/
 
+Иконки для расширения лежат в репозитории сервера в каталоге `images`.
+
 Создание расширений для Chrome и API, доступное расширениям, описано здесь:
 
   https://developer.chrome.com/extensions
